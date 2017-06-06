@@ -1,0 +1,19 @@
+{
+  "name": "homesweethome",
+  "version": "1.0.0",
+  "description": "realty listing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/whitzhu/homesweethome.git"
+  },
+  "author": "whitney zhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whitzhu/homesweethome/issues"
+  },
+  "homepage": "https://github.com/whitzhu/homesweethome#readme"
+}
