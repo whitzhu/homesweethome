@@ -24,7 +24,6 @@ h5 {
   font-weight: 400;
   margin: 2px 0;
 }
-
 .container {
   background: $nav-secondary-color;
   width: $card-width;
@@ -35,7 +34,10 @@ h5 {
 }
 .img-container {
   flex: 2;
-  background: red;
+  overflow: hidden;
+  img {
+    width:100%
+  }
 }
 .text-container {
   flex: 1;
