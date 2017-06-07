@@ -1,0 +1,52 @@
+@import '../../styles/global-variables.scss';
+
+$card-width: 240px;
+$card-width: 260px;
+
+h3 {
+  color: $font-primary;
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 6px;
+  margin-top: 0px;
+} 
+h4 {
+  color: $font-secondary;
+  margin-bottom: 6px;
+  margin-top: 0; 
+  font-size: 0.9em;
+  font-weight: 400;
+  margin: 4px 0;
+}
+h5 {
+  color: $font-tertiary; 
+  font-size: 0.9em;
+  font-weight: 400;
+  margin: 2px 0;
+}
+
+.container {
+  background: $nav-secondary-color;
+  width: $card-width;
+  height: $card-width;
+  display: flex;
+  flex-flow: column wrap;
+  box-shadow: $shadow-primary-color2;
+}
+.img-container {
+  flex: 2;
+  background: red;
+}
+.text-container {
+  flex: 1;
+  background: $card-text-bg-color;
+  min-height: 106px;
+  max-height: 106px;
+}
+.text-content {
+  padding: 10px;
+}
+.icon-desc{
+  margin-left: 4px;
+  margin-right: 8px;
+}
