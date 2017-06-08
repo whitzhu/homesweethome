@@ -1,21 +1,55 @@
 # Home Sweet Home
 
-## Create a real estate property listing widget.
+We make finding your next home sweet and simple.
 
-You will get data from two feed APIs - samples of this data can be found in `batmanRealty.json` and `supermanRealty.json`.  Using these sample files as a guide, please construct a widget that will correctly show these feeds.
+![Home Sweet Home](HomeSweetHome_WhitneyZhu.png)
 
-Please note: data from actual feeds would follow the sample structures, and would have varying amounts of data ie. overlapping / missing values.
+## Getting Started
+These instructions will get you a copy of the project up and run on your local machine for development and testing purposes. 
 
-### Please adhere to the additional caveats:
+### Prerequisites
 
-*   The widget should reasonably resemble the included design and account for different screen sizes/devices.
-*   The sort buttons are meant to be functional and should update the order of the properties when clicked. Note that only one of these buttons should be active at a time.
-*   The widget should function in the latest versions of Microsoft Edge, Chrome and iOS/Android browsers.
-*   Please use HTML, CSS and Javascript where applicable
+##### Node
+For development, you will only need [Node.js](http://nodejs.org/) installed on your environment. 
 
-Feel free to use any front end libraries/tools that you would like, but make sure that the final product (with viewable source code) is hosted somewhere public and/or that one can download and view it locally within a web browser.  Thank you and good luck!
+### Installing
 
-### Mockups
+```sh
+$ git clone https://github.com/whitzhu/homesweethome.git
+$ cd homesweethome
+$ npm install
+```
 
-![Real Estate Listing Widget](comp.png)
+
+### Run dev Server
+
+```
+npm run dev
+```
+
+### Simple Build for production
+
+```
+npm run build
+```
+
+## Built With
+
+* [React](https://facebook.github.io/react/) - Frontend Framework
+* [SASS](http://sass-lang.com/) - Styling
+* [Webpack](https://webpack.github.io/) - Module Bundler
+
+## Authors
+
+* **Whitney Zhu** - *Initial work* - [HomeSweetHome](https://github.com/whitzhu/homesweethome)
+
+See also the list of [contributors](https://github.com/whitzhu/homesweethome/contributors) who participated in this project.
+
+
+## Acknowledgments
+
+* Designed by Whitney Zhu - [Portfolio](https://www.behance.net/whitzhu)
+
+
+
 
