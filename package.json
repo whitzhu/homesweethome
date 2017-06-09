@@ -7,7 +7,7 @@
     "dev": "webpack-dev-server --hot --progress --colors --inline --open",
     "start": "nodemon server/server.js",
     "build": "webpack --watch --progress",
-    "test": "NODE_ENV=test mocha --compilers js:babel-core/register test/*-test.js"
+    "test": "NODE_ENV=test mocha --compilers js:babel-core/register --require babel-polyfill --require ./test/helpers.js --require ./test/dom.js --require ignore-styles test/*-test.js -R nyan"
   },
   "repository": {
     "type": "git",
@@ -45,10 +45,13 @@
     "eslint-plugin-react": "^7.0.1",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.2",
+    "ignore-styles": "^5.0.1",
+    "jsdom": "^11.0.0",
     "mocha": "^3.4.2",
     "node-sass": "^4.5.3",
     "react-test-renderer": "^15.5.4",
     "sass-loader": "^6.0.5",
+    "sinon": "^2.3.2",
     "style-loader": "^0.18.2",
     "webpack": "^2.6.1"
   }
