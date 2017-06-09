@@ -14,6 +14,9 @@ const Navbar = () => (
       </span>
       <Filter />
     </div>
+    <div className="author-section">
+      <a className="author-name" href="https://www.behance.net/whitzhu">Whitney Zhu</a>
+    </div>
   </div>
 );
 

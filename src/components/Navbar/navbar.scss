@@ -42,4 +42,18 @@
     display: flex;
   }
 }
+.author-section {
+  display: none;
+  @include for-size(desktop-up) {
+    display: block;
+    position: absolute;
+    bottom: 36px;
+  }
+}
+
+.author-name {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: $nav-secondary-color;
+}
 
