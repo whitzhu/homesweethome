@@ -14,7 +14,7 @@ module.exports = {
   output: {
     path: DIST_DIR,
     publicPath: '/',
-    filename: 'bundle.js',
+    filename: 'js/bundle.js',
   },
   module: {
     rules: [{
@@ -33,8 +33,11 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new ExtractTextPlugin({
-      filename: 'style.css',
+      filename: 'css/style.css',
       allChunks: true,
+    }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production'),
     }),
   ],
   devServer: {
