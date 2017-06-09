@@ -1,0 +1,48 @@
+@import '../../styles/global-variables.scss';
+
+.fitler{
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 40px;
+}
+
+.filter-header{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.filter-icon {
+  margin-right: 10px;
+}
+
+.filter-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  width: 160px;
+}
+
+.filter-btn {
+  flex: 0 0 42px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 42px;
+  border: 1px solid $font-beige;
+  border-radius: 4px;
+  margin: 14px 0;
+  font-weight: 400;
+  font-size: 0.8em;
+  color: $font-beige;
+  background: none;
+  
+  &.active {
+    font-weight: 700;
+    background: $font-beige;
+    color: $nav-primary-color;
+  }
+}
