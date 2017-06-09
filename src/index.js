@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
-import App from './components/App.jsx';
+import App from './components/App/App';
 
 require('./styles/global-style.scss');
 
@@ -18,5 +18,5 @@ const render = (Component) => {
 render(App);
 
 if (module.hot) {
-  module.hot.accept('./components/App.jsx', () => render(App));
+  module.hot.accept('./components/App/App', () => render(App));
 }

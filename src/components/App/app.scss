@@ -1,0 +1,14 @@
+@import '../../styles/global-variables.scss';
+@import '../../styles/media-query.scss';
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  flex-flow: column wrap;
+  overflow-x: hidden;
+  background-color: $background-color;
+
+  @include for-size(tablet-portrait-up) {
+    flex-flow: row nowrap;
+  }
+}
