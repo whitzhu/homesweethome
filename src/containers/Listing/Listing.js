@@ -30,6 +30,7 @@ class Listing extends Component {
       <div className="listing-outer-container">
         <div className="listing-inner-container">
           {this.renderListingToCards()}
+          <div className="listing-bottom" />
         </div>
       </div>
     );
