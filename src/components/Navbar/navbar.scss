@@ -1,0 +1,37 @@
+@import '../../styles/global-variables.scss';
+@import '../../styles/media-query.scss';
+  
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: $nav-height;
+  color: $nav-secondary-color;
+  background: $nav-primary-color;
+  box-shadow: $shadow-nav;
+  border-bottom: 1px solid #e4e4e4;
+  z-index: 1;
+  
+  @include for-size(desktop-up) {
+    position: relative;
+    justify-content: flex-start;
+    display: flex;
+    flex-flow: column wrap;
+    flex: 0 0 230px;
+    width: 230px;
+    height: 100vh;
+  }
+}
+
+.fitler{
+  display: none;
+
+  @include for-size(desktop-up) {
+    display: flex;
+  }
+}
+
