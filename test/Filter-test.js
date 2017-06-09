@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Filter from '../src/components/Filter/Filter';
+import Filter from '../src/containers/Filter/Filter';
 
 describe('<Filter />', () => {
   let wrapper;
