@@ -33,6 +33,12 @@ npm run dev
 npm run build
 ```
 
+### Running the tests
+
+```
+npm run test
+```
+
 ## Built With
 
 * [React](https://facebook.github.io/react/) - Frontend Framework
