@@ -1,4 +1,4 @@
-window.__SUPERMAN_DATA__ = {
+{
     "items": [
         {
             "address": "7791 Luther Way, Knoxville, TN 37918",
@@ -7,7 +7,7 @@ window.__SUPERMAN_DATA__ = {
             "baths": "2.5",
             "sqft": "3000",
             "built": "1976",
-            "thumb": "http://fillmurray.com/150/150",
+            "thumb": "https://s3-us-west-1.amazonaws.com/homesweethomewhit/media-assets/homes/1.jpg",
             "url": "http://zillow.com"
         },
         {
@@ -17,7 +17,7 @@ window.__SUPERMAN_DATA__ = {
             "baths": "2",
             "sqft": "1700",
             "built": "2001",
-            "thumb": "http://stevensegallery.com/200/200",
+            "thumb": "https://s3-us-west-1.amazonaws.com/homesweethomewhit/media-assets/homes/2.jpg",
             "url": "http://zillow.com"
         },
         {
@@ -27,7 +27,7 @@ window.__SUPERMAN_DATA__ = {
             "baths": "1",
             "sqft": "",
             "built": "1948",
-            "thumb": "http://fillmurray.com/150/150",
+            "thumb": "https://s3-us-west-1.amazonaws.com/homesweethomewhit/media-assets/homes/3.jpg",
             "url": "http://zillow.com"
         },
         {
@@ -37,8 +37,48 @@ window.__SUPERMAN_DATA__ = {
             "baths": "1.5",
             "sqft": "2100",
             "built": "2014",
-            "thumb": "http://stevensegallery.com/200/200",
+            "thumb": "https://s3-us-west-1.amazonaws.com/homesweethomewhit/media-assets/homes/4.jpg",
+            "url": "http://zillow.com"
+        },
+        {
+            "address": "7791 Luther Way, Knoxville, TN 37918",
+            "price": "549999",
+            "beds": "3",
+            "baths": "2.5",
+            "sqft": "3000",
+            "built": "1976",
+            "thumb": "https://s3-us-west-1.amazonaws.com/homesweethomewhit/media-assets/homes/5.jpg",
+            "url": "http://zillow.com"
+        },
+        {
+            "address": "2274 Kapow Drive, Hyattsville, MD 20782",
+            "price": "629950",
+            "beds": "2",
+            "baths": "2.5",
+            "sqft": "1700",
+            "built": "2007",
+            "thumb": "https://s3-us-west-1.amazonaws.com/homesweethomewhit/media-assets/homes/6.jpg",
+            "url": "http://zillow.com"
+        },
+        {
+            "address": "8486 10th Street, Gotham, NY 27520",
+            "price": "282000",
+            "beds": "2",
+            "baths": "1",
+            "sqft": "",
+            "built": "1998",
+            "thumb": "https://s3-us-west-1.amazonaws.com/homesweethomewhit/media-assets/homes/7.jpg",
+            "url": "http://zillow.com"
+        },
+        {
+            "address": "234 Main Avenue, Depew, NY 14043",
+            "price": "819999",
+            "beds": "4",
+            "baths": "2.5",
+            "sqft": "2100",
+            "built": "2012",
+            "thumb": "https://s3-us-west-1.amazonaws.com/homesweethomewhit/media-assets/homes/8.jpg",
             "url": "http://zillow.com"
         }
     ]
-};
+}
