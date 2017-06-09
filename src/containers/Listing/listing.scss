@@ -1,0 +1,22 @@
+@import '../../styles/global-variables.scss';
+@import '../../styles/media-query.scss';
+
+.listing-outer-container{
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  padding-top: $nav-height;
+
+  @include for-size(tablet-portrait-up) {
+    overflow-y: scroll;
+  }  
+}
+.listing-inner-container{
+  flex:1;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  @include for-size(tablet-portrait-up) {
+    padding: 20px;
+  }  
+}
