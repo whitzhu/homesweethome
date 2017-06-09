@@ -17,7 +17,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   module: {
-    loaders: [{
+    rules: [{
       exclude: /node_modules/,
       test: /\.(jsx|js)?$/,
       loaders: ['babel-loader'],
