@@ -1,33 +1,28 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import util from '../../util/util';
 import dataSuperman from '../../../supermanRealty.json';
 import dataBatman from '../../../batmanRealty.json';
 
 import Card from '../../components/Card/Card';
+import { fetchListingData } from '../../actions/index';
 
 require('./listing.scss');
 
-export default class Listing extends Component {
+class Listing extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      listings: dataSuperman.items,
     };
     this.renderListingToCards = this.renderListingToCards.bind(this);
   }
 
   componentWillMount() {
-    util.normalizeListing(dataBatman, (normalizedData) => {
-      let combinedList = this.state.listings.slice();
-      combinedList = combinedList.concat(normalizedData);
-      this.setState({
-        listings: combinedList,
-      });
-    });
+    this.props.fetchListingData();
   }
 
   renderListingToCards() {
-    return this.state.listings.map(listing => <Card cardData={listing} />);
+    return this.props.listings.map((listing, index) => <Card key={index} cardData={listing} />);
   }
 
   render() {
@@ -40,3 +35,17 @@ export default class Listing extends Component {
     );
   }
 }
+
+function mapStateToProps(state) {
+  return {
+    listings: state.listing,
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    fetchListingData: () => dispatch(fetchListingData()),
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Listing);
