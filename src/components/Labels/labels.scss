@@ -1,0 +1,40 @@
+@import '../../styles/global-variables.scss';
+@import '../../styles/media-query.scss';
+
+.labels-container {
+  content: '';
+  position: relative;
+  top: 50px;
+  right: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 84px;
+  height: 34px;
+  border-radius: 4px;
+  color: $font-white;
+
+  @include for-size(tablet-portrait-up) {
+    top: 26px;
+    right: 10px;
+    width: 76px;
+    height: 30px;
+  }
+}
+
+.labels-container-hot::before {
+  @extend .labels-container;
+  content: 'HOT';
+  background: $label-hot;
+
+}
+.labels-container-new::before {
+  @extend .labels-container;
+  content: 'NEW';
+  background: $label-new;
+}
+.labels-container-sold::before {
+  @extend .labels-container;
+  content: 'SOLD';
+  background: $label-sold;
+}
