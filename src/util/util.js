@@ -18,21 +18,21 @@ const util = {
   },
   normalizeListing(rawData, callback) {
     const finalData = [];
-    for (const listing in rawData) {
+    Object.keys(rawData).forEach((listing) => {
       const data =
         {
           beds: rawData[listing].beds,
           baths: rawData[listing].baths,
           address: listing,
-          price: rawData[listing].cost,
-          sqft: '3000',
+          price: rawData[listing].cost.replace(/,/g, ''),
+          sqft: util.numberFormatter('sqft', rawData[listing].sq_ft),
           built: null,
           label: util.randomLabelGenerator(),
           thumb: rawData[listing].img,
           url: rawData[listing].url,
         };
       finalData.push(data);
-    }
+    });
     callback(finalData);
   },
   randomLabelGenerator() {
@@ -44,6 +44,14 @@ const util = {
       6: 'new',
     };
     return label[Math.floor(Math.random() * 7)];
+  },
+  filterPrice(listings, category, sort, callback) {
+    const filterPriceListing = listings.sort((a, b) => {
+      const numA = parseInt(a[category], 10);
+      const numB = parseInt(b[category], 10);
+      return sort === 'ascending' ? numA - numB : numB - numA;
+    });
+    callback(filterPriceListing);
   },
 };
 
