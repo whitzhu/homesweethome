@@ -2,6 +2,8 @@
 
 We make finding your next home sweet and simple.
 
+[Deployed Site](https://homesweethomewhitzhu.herokuapp.com)
+
 ![Home Sweet Home](HomeSweetHome_WhitneyZhu.png)
 
 ## Getting Started
