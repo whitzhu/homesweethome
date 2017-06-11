@@ -6,6 +6,18 @@ We make finding your next home sweet and simple.
 
 ![Home Sweet Home](https://s3-us-west-1.amazonaws.com/homesweethomewhit/media-assets/homesweethome-screenshoot.jpg)
 
+## Features
+* Filters listing by price, beds, baths and Sq Ft
+![Filter](http://i.imgur.com/0bpJxgX.gif)
+
+* Responsive layout for phone, tablet and desktop
+![Responsive](http://i.imgur.com/Ck8yogf.gif)
+
+### Future Features
+* Static fitler --> slider for more refine control
+* Bookmark location for future reference
+* Integrate with Google map to showcase property location
+
 ## Getting Started
 These instructions will get you a copy of the project up and run on your local machine for development and testing purposes. 
 
