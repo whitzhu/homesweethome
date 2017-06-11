@@ -37,12 +37,11 @@
   margin: 14px 0;
   font-weight: 400;
   font-size: 0.8em;
-  color: $font-beige;
+  color: $nav-secondary-color;
   background: none;
   
   &.active {
-    font-weight: 700;
-    background: $font-beige;
+    background: $nav-tertiary-color;
     color: $nav-primary-color;
   }
 }
