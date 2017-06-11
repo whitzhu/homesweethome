@@ -50,6 +50,8 @@ npm run test
 * [Webpack](https://webpack.github.io/) - Module Bundler
 * [Grunt](https://gruntjs.com/) - Task Runner for PostCSS processing, minification, and compilation
 * [Airbnb ESLint](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) - Linting
+* [Mocha](https://mochajs.org/) - Testing Framework
+* [Enzyme](https://mochajs.org/) - Testing Uilities for React
 
 ## Authors
 
