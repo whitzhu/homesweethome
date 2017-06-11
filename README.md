@@ -8,9 +8,11 @@ We make finding your next home sweet and simple.
 
 ## Features
 * Filters listing by price, beds, baths and Sq Ft
+
 ![Filter](http://i.imgur.com/0bpJxgX.gif)
 
 * Responsive layout for phone, tablet and desktop
+
 ![Responsive](http://i.imgur.com/Ck8yogf.gif)
 
 ### Future Features
