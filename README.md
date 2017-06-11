@@ -45,7 +45,11 @@ npm run test
 
 * [React](https://facebook.github.io/react/) - Frontend Framework
 * [SASS](http://sass-lang.com/) - Styling
+* [Express](https://expressjs.com/) - Server Framework
+* [Node](https://nodejs.org/) - Server
 * [Webpack](https://webpack.github.io/) - Module Bundler
+* [Grunt](https://gruntjs.com/) - Task Runner for PostCSS processing, minification, and compilation
+* [Airbnb ESLint](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) - Linting
 
 ## Authors
 
