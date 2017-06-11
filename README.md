@@ -4,7 +4,7 @@ We make finding your next home sweet and simple.
 
 [Deployed Site](https://homesweethomewhitzhu.herokuapp.com)
 
-![Home Sweet Home](HomeSweetHome_WhitneyZhu.png)
+![Home Sweet Home](https://s3-us-west-1.amazonaws.com/homesweethomewhit/media-assets/homesweethome-screenshoot.jpg)
 
 ## Getting Started
 These instructions will get you a copy of the project up and run on your local machine for development and testing purposes. 
