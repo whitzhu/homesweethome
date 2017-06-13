@@ -46,12 +46,35 @@ const util = {
     return label[Math.floor(Math.random() * 7)];
   },
   filterPrice(listings, category, sort, callback) {
-    const filterPriceListing = listings.sort((a, b) => {
-      const numA = parseInt(a[category], 10);
-      const numB = parseInt(b[category], 10);
-      return sort === 'ascending' ? numA - numB : numB - numA;
-    });
-    callback(filterPriceListing);
+    function mergeSort(listings) {
+      const mid = Math.floor(listings.length / 2);
+      if (listings.length < 2) return listings;     
+      let left = listings.slice(0, mid);
+      let right = listings.slice(mid);
+      left = mergeSort(left);
+      right = mergeSort(right);
+      return merge(left, right);
+    }
+    
+    function merge(left, right) {
+      let mergeResult = [];
+      while (left.length && right.length) {
+        if (parseInt(left[0][category], 10) > parseInt(right[0][category], 10)) {
+          mergeResult.push(right.shift());
+        } else if (parseInt(left[0][category], 10) < parseInt(right[0][category], 10)) {
+          mergeResult.push(left.shift());
+        } else {
+          mergeResult.push(left.shift());
+        }
+      }
+      if (left.length) {
+        mergeResult = mergeResult.concat(left);
+      } else if (right.length) {
+        mergeResult = mergeResult.concat(right);
+      }
+      return mergeResult;
+    }
+    callback(mergeSort(listings));
   },
 };
 
