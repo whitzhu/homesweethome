@@ -4,6 +4,7 @@ import util from '../util/util';
 
 const FETCH_LISTING_DATA = 'FETCH_LISTING_DATA';
 const FILTER_LISTING_DATA = 'FILTER_LISTING_DATA';
+const TOGGLE_MOBILE_FILTER = 'TOGGLE_MOBILE_FILTER';
 
 export function fetchListingData() {
   let combinedList = dataSuperman.items;
@@ -21,5 +22,13 @@ export function filterListingData(category, sort) {
     type: FILTER_LISTING_DATA,
     category,
     sort,
+  };
+}
+
+export function toggleMobileFilter(mobileFilter) {
+  console.log('toggleMobileFilter==', mobileFilter)
+  return {
+    type: TOGGLE_MOBILE_FILTER,
+    mobileFilter,
   };
 }
