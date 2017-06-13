@@ -30,12 +30,18 @@ module.exports = function(grunt) {
         src: 'public/css/*.css',
       },
     },
+    shell: {
+      build: {
+        command: 'npm run build'
+      }
+    },
   });
 
   // Load the plugin that provides the post-css task
+  grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-postcss');
 
   // Default task(s)
-  grunt.registerTask('default', ['postcss', 'uglify']);
+  grunt.registerTask('default', ['shell', 'postcss', 'uglify']);
 };
