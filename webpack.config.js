@@ -12,9 +12,9 @@ module.exports = {
     './src/index.js',
   ],
   output: {
-    path: path.join(__dirname, '/public', 'js'),
+    path: path.join(__dirname, '/public'),
     publicPath: '/',
-    filename: 'bundle.js',
+    filename: 'js/bundle.js',
   },
   module: {
     rules: [{
