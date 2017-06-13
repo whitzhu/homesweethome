@@ -12,9 +12,9 @@ module.exports = {
     './src/index.js',
   ],
   output: {
-    path: DIST_DIR,
+    path: path.join(__dirname, '/public', 'js'),
     publicPath: '/',
-    filename: 'js/bundle.js',
+    filename: 'bundle.js',
   },
   module: {
     rules: [{

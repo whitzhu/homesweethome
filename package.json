@@ -4,6 +4,7 @@
   "description": "realty listing",
   "main": "index.js",
   "scripts": {
+    "postinstall": "grunt",
     "dev": "webpack-dev-server --hot --progress --colors --inline --open",
     "start": "node server/server.js",
     "build": "webpack -p --progress --colors",
@@ -28,9 +29,7 @@
     "react-hot-loader": "^3.0.0-beta.7",
     "react-redux": "^5.0.5",
     "redux": "^3.6.0",
-    "serve-favicon": "^2.4.3"
-  },
-  "devDependencies": {
+    "serve-favicon": "^2.4.3",
     "autoprefixer": "^7.1.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
@@ -38,10 +37,8 @@
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "chai": "^4.0.2",
     "css-loader": "^0.28.4",
     "cssnano": "^3.10.0",
-    "enzyme": "^2.8.2",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-plugin-import": "^2.3.0",
@@ -52,17 +49,21 @@
     "grunt": "^1.0.1",
     "grunt-contrib-uglify": "^3.0.1",
     "grunt-postcss": "^0.8.0",
+    "node-sass": "^4.5.3",
+    "pixrem": "^3.0.2",
+    "style-loader": "^0.18.2",
+    "sass-loader": "^6.0.5",
+    "webpack": "^2.6.1"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "enzyme": "^2.8.2",
     "ignore-styles": "^5.0.1",
     "jsdom": "^11.0.0",
     "mocha": "^3.4.2",
-    "node-sass": "^4.5.3",
-    "pixrem": "^3.0.2",
     "react-test-renderer": "^15.5.4",
     "redux-logger": "^3.0.6",
-    "sass-loader": "^6.0.5",
     "sinon": "^2.3.2",
-    "style-loader": "^0.18.2",
-    "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
   }
 }
