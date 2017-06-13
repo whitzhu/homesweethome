@@ -6,7 +6,8 @@ import dataBatman from '../../../batmanRealty.json';
 
 import Card from '../../components/Card/Card';
 import FilterButton from '../../components/FilterButton/FilterButton';
-import { fetchListingData } from '../../actions/index';
+import MobileFilter from '../../containers/MobileFilter/MobileFilter';
+import { fetchListingData, toggleMobileFilter } from '../../actions/index';
 
 require('./listing.scss');
 
@@ -31,7 +32,8 @@ class Listing extends Component {
       <div className="listing-outer-container">
         <div className="listing-inner-container">
           {this.renderListingToCards()}
-          <FilterButton />
+          <FilterButton toggleMobileFilter={this.props.toggleMobileFilter} />
+           { this.props.mobileFilterOpen ? <MobileFilter /> : null }
           <div className="listing-bottom" />
         </div>
       </div>
@@ -42,12 +44,14 @@ class Listing extends Component {
 function mapStateToProps(state) {
   return {
     listings: state.listing,
+    mobileFilterOpen: state.mobileFilterOpen,
   };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
     fetchListingData: () => dispatch(fetchListingData()),
+    toggleMobileFilter: (state) => dispatch(toggleMobileFilter(state)),
   };
 }
 
