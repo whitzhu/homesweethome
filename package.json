@@ -37,9 +37,7 @@
     "grunt-postcss": "^0.8.0",
     "node-sass": "^4.5.3",
     "pixrem": "^3.0.2",
-    "cssnano": "^3.10.0"
-  },
-  "devDependencies": {
+    "cssnano": "^3.10.0",
     "autoprefixer": "^7.1.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
