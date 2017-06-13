@@ -5,6 +5,7 @@ import dataSuperman from '../../../supermanRealty.json';
 import dataBatman from '../../../batmanRealty.json';
 
 import Card from '../../components/Card/Card';
+import FilterButton from '../../components/FilterButton/FilterButton';
 import { fetchListingData } from '../../actions/index';
 
 require('./listing.scss');
@@ -30,6 +31,7 @@ class Listing extends Component {
       <div className="listing-outer-container">
         <div className="listing-inner-container">
           {this.renderListingToCards()}
+          <FilterButton />
           <div className="listing-bottom" />
         </div>
       </div>

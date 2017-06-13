@@ -1,0 +1,41 @@
+@import '../../styles/global-variables.scss';
+@import '../../styles/media-query.scss';
+
+.filter-button-container {
+  position: fixed;
+  right: 0px;
+  left: 0px;
+  display: inline-block;
+  text-align: center;
+  bottom: 16px;
+
+  .filter-button {
+    display: inline-block;
+    width: 120px;
+    height: 33px;
+    border: none;
+    border-radius: 80px;
+    background: #fff;
+    padding: 8px 0;
+    color: $font-primary;
+    font-weight: 300;
+    font-size: 0.9em;
+    box-shadow: $shadow-primary-color-button;
+    
+    @include for-size(tablet-landscape-up) {
+      width: 180px;
+      height: 46px;
+      padding: 14px 0;
+    }
+    .filter-icon {
+      width: 16px;
+      margin-right: 0px;
+      margin-left: 10px;
+    }
+  }
+  
+  @include for-size(desktop-up) {
+    display: none;
+  }
+}
+
