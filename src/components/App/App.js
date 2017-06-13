@@ -9,9 +9,10 @@ import reducer from '../../reducers';
 
 require('./app.scss');
 
+const middleware = process.env.NODE_ENV === 'production' ? [] : [logger]
 const store = createStore(
   reducer,
-  applyMiddleware(logger),
+  applyMiddleware(...middleware),
 );
 
 const App = () => (
