@@ -1,5 +1,6 @@
 import React from 'react';
 import logger from 'redux-logger';
+import ReactGA from 'react-ga';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 
@@ -14,6 +15,9 @@ const store = createStore(
   reducer,
   applyMiddleware(...middleware),
 );
+
+ReactGA.initialize('UA-101037817-1');
+ReactGA.pageview(window.location.pathname);
 
 const App = () => (
   <Provider store={store}>
