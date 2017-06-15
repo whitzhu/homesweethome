@@ -6,12 +6,15 @@
   flex-flow: row wrap;
   margin: 0 auto;
   padding-top: 70px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   
   @include for-size(tablet-portrait-up) {
     padding-top: $nav-height;
   }
   @include for-size(desktop-up) {
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;    
     padding-top: 20px;
   }  
 }
